@@ -7,7 +7,7 @@ class Fetcher extends Component {
     this.updateImageUrl = this.updateImageUrl.bind(this);
   }
   scan() {
-    let xhr = XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open("POST", "https://keywordsready.com/api/analyzes", true);
     xhr.setRequestHeader("api-key", "12798hlAg7HJlQhGuRyTZOBuLAtt");
     xhr.onreadystatechange = () => {
